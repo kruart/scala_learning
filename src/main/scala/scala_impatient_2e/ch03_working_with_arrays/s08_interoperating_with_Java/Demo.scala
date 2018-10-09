@@ -1,4 +1,4 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s08_interoperating_with_Java
+package scala_impatient_2e.ch03_working_with_arrays.s08_interoperating_with_Java
 
 import scala.collection.Searching._
 import scala.collection.JavaConverters._

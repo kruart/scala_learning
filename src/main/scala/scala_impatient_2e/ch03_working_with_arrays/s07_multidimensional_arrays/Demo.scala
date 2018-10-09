@@ -1,4 +1,4 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s07_multidimensional_arrays
+package scala_impatient_2e.ch03_working_with_arrays.s07_multidimensional_arrays
 
 object Demo extends App {
   // To construct such a two-dimensional array of Double values

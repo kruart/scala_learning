@@ -1,4 +1,4 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s09_exercises
+package scala_impatient_2e.ch03_working_with_arrays.s09_exercises
 
 /** Given an array of integers, produce a new array that contains all positive values of the original array,
   * in their original order, followed by all values that are zero or negative, in their original order.. */

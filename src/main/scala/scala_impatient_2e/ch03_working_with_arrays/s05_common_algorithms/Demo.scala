@@ -1,4 +1,4 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s05_common_algorithms
+package scala_impatient_2e.ch03_working_with_arrays.s05_common_algorithms
 
 import scala.collection.mutable.ArrayBuffer
 import scala.util.Sorting

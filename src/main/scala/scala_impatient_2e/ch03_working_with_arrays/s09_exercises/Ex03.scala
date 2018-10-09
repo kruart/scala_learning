@@ -1,4 +1,4 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s09_exercises
+package scala_impatient_2e.ch03_working_with_arrays.s09_exercises
 
 /** Repeat the preceding assignment, but produce a new array with the swapped values. Use for/yield. */
 object Ex03 extends App {

@@ -1,4 +1,4 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s01_fixed_length_arrays
+package scala_impatient_2e.ch03_working_with_arrays.s01_fixed_length_arrays
 
 object Demo extends App {
   //fixed-length Arrays

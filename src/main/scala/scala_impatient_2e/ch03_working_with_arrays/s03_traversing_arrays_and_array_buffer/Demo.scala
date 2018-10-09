@@ -1,4 +1,4 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s03_traversing_arrays_and_array_buffer
+package scala_impatient_2e.ch03_working_with_arrays.s03_traversing_arrays_and_array_buffer
 
 object Demo extends App {
   val a = Array(1, 1, 2, 3, 5, 8, 13, 21, 34, 55)

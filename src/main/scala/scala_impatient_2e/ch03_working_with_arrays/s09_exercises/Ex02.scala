@@ -1,4 +1,4 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s09_exercises
+package scala_impatient_2e.ch03_working_with_arrays.s09_exercises
 
 /** Write a loop that swaps adjacent elements of an array of integers.
     For example, Array(1, 2, 3, 4, 5) becomes Array(2, 1, 4, 3, 5). */

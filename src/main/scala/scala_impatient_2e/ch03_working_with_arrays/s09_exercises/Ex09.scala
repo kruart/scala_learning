@@ -1,9 +1,11 @@
-package scala_impatient_2e.ch_03_working_with_arrays.s09_exercises
+package scala_impatient_2e.ch03_working_with_arrays.s09_exercises
 
 import scala.collection.mutable.ArrayBuffer
 
-/** Suppose you are given an array buffer of integers and want to remove all but the first negative number. */
-object Ex08 extends App {
+/** Improve the solution of the preceding exercise by collecting the positions
+  * that should be moved and their target positions. Make those moves and truncate the buffer.
+  * Don’t copy any elements before the first unwanted element. */
+object Ex09 extends App {
   def removeAllNegativeButTheFirst(arr: ArrayBuffer[Int]): Unit = {
     val result = for (i <- arr.indices if arr(i) < 0) yield i
     result.drop(1).reverse.foreach(arr.remove)
