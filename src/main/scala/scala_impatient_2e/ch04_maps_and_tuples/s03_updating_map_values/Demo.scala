@@ -1,6 +1,5 @@
 package scala_impatient_2e.ch04_maps_and_tuples.s03_updating_map_values
 
-/** Created by kruart on 21.08.2017. */
 object Demo extends App {
   val scores1 = scala.collection.mutable.Map("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
 
