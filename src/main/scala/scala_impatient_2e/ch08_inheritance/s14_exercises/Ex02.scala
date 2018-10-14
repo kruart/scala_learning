@@ -5,14 +5,14 @@ package scala_impatient_2e.ch08_inheritance.s14_exercises
   that earns interest every month (when a method earnMonthlyInterest is called)
   and has three free deposits or withdrawals every month. Reset the transaction count in the earnMonthlyInterest method.
  */
-class BankAccount(initialBalance: Double) {
+class BankAccount1(initialBalance: Double) {
   private var balance = initialBalance
   def currentBalance = balance
   def deposit(amount: Double) = { balance += amount; balance }
   def withdraw(amount: Double) = { balance -= amount; balance }
 }
 
-class SavingsAccount(initialBalance: Double, monthRate: Double) extends BankAccount(initialBalance) {
+class SavingsAccount(initialBalance: Double, monthRate: Double) extends BankAccount1(initialBalance) {
   private var freeTransactions = 3
 
   override def deposit(amount: Double): Double = {
