@@ -4,7 +4,7 @@ trait ConsoleLogger {
   def log(msg: String) = println(msg)
 }
 class Account {
-  var balance = 1000
+  var balance = 1000.0
   def currentBalance = balance
   def deposit(amount: Double) = { balance += amount; }
   def withdraw(amount: Double) = { balance -= amount; }
