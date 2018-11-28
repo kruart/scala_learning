@@ -4,3 +4,6 @@ scalaVersion := "2.12.7"
 triggeredMessage in ThisBuild := Watched.clearWhenTriggered
 
 reColors := Revolver.noColors
+
+//scalacOptions += "-deprecation"
+scalacOptions ++= Seq("-deprecation")
