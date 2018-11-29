@@ -7,8 +7,8 @@ object Main {
     println("*" * 50)
   }
 
-  println(Console.MAGENTA + "-" * 22 + "Person" + "-" * 22 + Console.RESET)
   def code(args: Array[String]): Unit = {
+    println(Console.MAGENTA + "-" * 22 + "Person" + "-" * 22 + Console.RESET)
     val person = Person("Bob", 27, isMale = true)
     println(person.isMale)
     println(person.isFemale)
@@ -34,6 +34,10 @@ object Main {
     println(person.productArity)
     println(person.productIterator.mkString("***"))
 
+    println("-" * 50)
+    person match {
+      case Person(n, a, m) => println("pattern matching works")
+    }
 
     println(Console.MAGENTA + "-" * 22 + "Human" + "-" * 22 + Console.RESET)
     val human = Human("Bob", 27, isMale = true)
@@ -61,5 +65,10 @@ object Main {
     println(human.productElement(0))
     println(human.productArity)
     println(human.productIterator.mkString("***"))
+
+    println("-" * 50)
+    human match {
+      case Human(n, a, m) => println("pattern matching works")
+    }
   }
 }

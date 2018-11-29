@@ -1,6 +1,6 @@
 package devInsideYou.YFPL.v20_case_classes
 
-final class Human(val name: String, val age: Int, val isMale: Boolean) extends Product {
+final class Human(val name: String, val age: Int, val isMale: Boolean) extends Product with Serializable {
   def isFemale: Boolean = !isMale
 
   def copy(name: String = this.name, age: Int = this.age, isMale: Boolean = this.isMale): Human = {
@@ -12,7 +12,7 @@ final class Human(val name: String, val age: Int, val isMale: Boolean) extends P
 
   override def equals(other: Any): Boolean = other match {
     case that: Human if that canEqual this =>
-    this.name == that.name &&
+      this.name == that.name &&
         this.age == that.age &&
         this.isMale == that.isMale
     case _ => false
@@ -44,4 +44,7 @@ object Human extends ((String, Int, Boolean) => Human) {
 
   override def toString: String = "Human"
 
+  def unapply(human: Human): Option[(String, Int, Boolean)] =
+    if (human == null) None
+    else Some(human.name, human.age, human.isMale)
 }
