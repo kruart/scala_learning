@@ -22,7 +22,7 @@ object Scala {
       periodInMilliseconds
     )
 
-    io.StdIn.readLine //block current Thread until ENTER is pressed
+    scala.io.StdIn.readLine //block current Thread until ENTER is pressed
     timer.cancel()
   }
 
