@@ -171,7 +171,5 @@ object DataFrameStatistics_Tutorial extends App with Context {
   println(s"Number of rows in sample dfTagsSample = ${dfTagsSample.count()}")
   println(s"Number of rows in dfTags = ${dfTags.count()}")
 
-
-
   sparkSession.close()
 }
