@@ -1,7 +1,6 @@
 package allaboutscala.spark.dataframe
 
 import allaboutscala.spark.utils.Context
-import org.apache.spark.sql.functions
 
 // http://allaboutscala.com/big-data/spark/#dataframe-introduction
 object DataFrame_SQL_Queries extends App with Context {
@@ -61,7 +60,8 @@ object DataFrame_SQL_Queries extends App with Context {
   dfTags.groupBy("tag").count().filter("count > 5").orderBy("tag").show(10)
 
   // DataFrame Query: SQL order by (descending order)
-  dfTags.groupBy("tag").count().filter("count > 5").orderBy(functions.desc("count")).show(10)
+  import org.apache.spark.sql.functions.desc
+  dfTags.groupBy("tag").count().filter("count > 5").orderBy(desc("count")).show(10)
 
 
   // DataFrame Query: Cast columns to specific data type
